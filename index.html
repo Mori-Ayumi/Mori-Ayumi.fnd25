@@ -1,1 +1,67 @@
-console.log("Hello!");
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-wigth, intial-scale=1.0"> 
+   <title> 略語クイズ</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="loading">
+        <p>Loading...</p>
+        <div id="loading-screen"></div>
+    </div>
+    <div class="hero">
+        <h1 class="title">略語クイズ</h1>
+        <img src="/Users/ayuayuinjapan/Desktop/pressentation/img/pc.png" alt="タイトル下画像" width="500" height="500">
+    </div>
+        <br>
+        <section class="quiz_box">
+            <div>
+                <p>Q1 トヨタ自動車（中国）投資有限会社の略称は？</p>
+            </div>
+            <form id="quiz-1">
+                <input name="answer" type="radio" value="a">TMAP</input>
+                <input name="answer" type="radio" value="b">TMA</input>
+                <input name="answer" type="radio" value="c">TMCI</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz1();">回答</button>
+            </div>
+        </section><br>
+        <section class="quiz_box">
+            <div>
+                <p>Q2 RHDとは？</p>
+            </div>
+            <form id="quiz-2">
+                <input name="answer" type="radio" value="a">右ハンドル車</input>
+                <input  name="answer" type="radio" value="b">リアルハードディスク</input>
+                <input name="answer" type="radio" value="c">c.右打ちバッター</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz2();">回答</button>
+            </div>
+        </section><br>
+        <section class="quiz_box">
+            <div>
+                <p>Q3 KPIとは？</p>
+            </div>
+            <form id="quiz-3">
+                <input name="answer" type="radio" value="a">主要業績評価指標</input>
+                <input name="answer" type="radio" value="b">最高経営責任者</input>
+                <input name="answer" type="radio" value="c">仮想プライベートネットワーク</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz3();">回答</button>  
+            </div>
+        </section><br>
+        <div id="score-container">
+            <p id="score-message"></p>    
+        </div>
+        <p id="score-img"></p>
+        <button class="btn-score" type="button" onclick="showScore();">合計得点</button>   
+
+</body>
+
+
+
+</html>
